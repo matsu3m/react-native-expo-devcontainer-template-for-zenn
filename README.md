@@ -20,12 +20,17 @@ Ensure that you have the following installed on your machine:
     - Clone the project repository to your local machine.
     - Open the project in VS Code.
 
-2. Reopen in Container:
+2. Set Up Environment Variables:
+
+    - In the `.devcontainer` directory of your project, create a `.env` file.
+    - Add the following line to the `.env` file: `REACT_NATIVE_PACKAGER_HOSTNAME=192.168.xxx.xxx` - Replace `192.168.xxx.xxx` with your host machine's local IP address.
+
+3. Reopen in Container:
 
     - Open the Command Palette in VS Code.
     - Select `Dev Containers: Reopen in Container`. VS Code will then start building the container and open the project inside it.
 
-3. Start the Expo Server:
+4. Start the Expo Server:
 
     - Once the container is running, open the terminal in VS Code.
     - Run the command `npm run start` to start the Expo server.
